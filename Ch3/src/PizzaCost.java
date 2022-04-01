@@ -16,8 +16,9 @@ public class PizzaCost {
 		System.out.println ("Enter the diameter of the pizza in inches:\r\n"
 				+ "The cost of making the pizza is:");
 		
+		String 
 		// The labor cost of the pizza
-		int x = 7.5
+		float x = 7.5
  		x += 5;
 		
 		// The rent cost of the pizza
