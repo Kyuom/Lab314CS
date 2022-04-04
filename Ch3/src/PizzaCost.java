@@ -30,8 +30,8 @@ public class PizzaCost {
 		//cost of pizza
 		float cost = labor+rent+materials;
 		
-		System.out.println("The diameter of the pizza in inches is:" +inches
-				+"The cost of the pizza is:" +cost);
+		System.out.println("The diameter of the pizza in inches is: $" +inches
+				+"The cost of the pizza is: $" +cost);
 
 	}
 
