@@ -13,18 +13,26 @@ Course: Computer Science 10
 public class PizzaCost {
 
 	public static void main(String[] args) {
-		System.out.println ("Enter the diameter of the pizza in inches:\r\n"
-				+ "The cost of making the pizza is:");
+		    
+		// The diameter of pizza
+		int x = 10;
+		int inches = x;
 		
-		String 
 		// The labor cost of the pizza
-		float x = 7.5
- 		x += 5;
+		float labor = 0.75f;
 		
 		// The rent cost of the pizza
-		
+		float rent = 1.00f;
 		
 		// The material cost of the pizza
+		float materials = 0.05f*inches*inches;
+		
+		//cost of pizza
+		float cost = labor+rent+materials;
+		
+		System.out.println("The diameter of the pizza in inches is:" +inches
+				+"The cost of the pizza is:" +cost);
+
 	}
 
 }
