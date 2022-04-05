@@ -1,6 +1,6 @@
 /*
 
-Program: Assignment1.java          Date: 3-31-2022
+Program: Assignment2.java          Date: 04-01-2022
 
 
 Author: Kearmouy Heng
