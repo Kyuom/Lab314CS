@@ -27,7 +27,7 @@ public class MyInitials {
 				+ "*   *        *      *\r\n"
 				+ "*    *       *      *\r\n"
 				+ "*     *      *      *\r\n"
-				+ "*      *  .  *      *\r\n");
+				+ "*      *  .  *      *  .\r\n");
 
 	}
 
