@@ -20,7 +20,7 @@ public class PizzaCost {
 
 		    System.out.println("Enter the diameter of the pizza in inches:");
 
-		    // Numerical input
+		    // User pizza diameter input
 		    int inches = myObj.nextInt();
 			
 			// The labor cost of the pizza
@@ -32,7 +32,7 @@ public class PizzaCost {
 			// The material cost of the pizza
 			float materials = 0.05f*inches*inches;
 			
-			//cost of pizza
+			//The total cost of the pizza
 			float cost = labor+rent+materials;
 			
 		    // Output input by user
