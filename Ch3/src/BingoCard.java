@@ -26,6 +26,12 @@ public class BingoCard {
 /* Screen Dump
 
 
+B     I     N     G     O
+8     17    34    52    64
+13    19    42    56    68
+5     23   FREE   60    75
+9     28    38    51    70
+2     30    43    57    69
 
 
  */

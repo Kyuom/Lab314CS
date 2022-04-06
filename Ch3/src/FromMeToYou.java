@@ -17,8 +17,8 @@ public class FromMeToYou
     {
         System.out.println("From: Mr. Wilson\r\n"
         		+ "Address: Acer Computer, Lab 314\r\n"
-        		+ "Date: November 2, 2020\r\n"
-        		+ "To: Kearmouy Heng\r\n"
+        		+ "Date: November 2, 2020\r\n\r\n\r\n"
+        		+ "To: Kearmouy Heng\r\n\r\n\r\n"
         		+ "Message: Help! I'm trapped inside a computer!");
        
     }
@@ -26,7 +26,16 @@ public class FromMeToYou
 }
 /* Screen Dump
  
+ 
+From: Mr. Wilson
+Address: Acer Computer, Lab 314
+Date: November 2, 2020
 
+
+To: Kearmouy Heng
+
+
+Message: Help! I'm trapped inside a computer!
 
  
  */
