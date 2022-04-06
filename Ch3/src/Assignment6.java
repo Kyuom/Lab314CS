@@ -1,8 +1,6 @@
-import java.util.Scanner;
-
 /*
 
-Program: Assignment5.java          Date: 04-06-2022
+Program: Assignment6.java          Date: 04-06-2022
 
 
 Author: Kearmouy Heng
@@ -11,6 +9,8 @@ Course: Computer Science 10
  
 
 */
+import java.util.Scanner;
+
 public class Assignment6 {
 
 	public static void main(String[] args) {
