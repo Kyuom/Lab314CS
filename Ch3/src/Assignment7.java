@@ -37,6 +37,14 @@ public class Assignment7 {
 /* Screen Dump
 
 
+Enter the change in cents: 212
+
+
+The minimum number of coins is: 
+Quarters: 8
+Dimes: 1
+Nickels: 0
+Pennies: 2
 
 
  */

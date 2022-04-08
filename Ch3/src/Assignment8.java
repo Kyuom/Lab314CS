@@ -17,7 +17,7 @@ public class Assignment8 {
 
 		Scanner myObj = new Scanner (System.in);
 		
-		System.out.print("Enter a two digit number ");
+		System.out.print("Enter a two digit number: ");
 		int digit2 = myObj.nextInt();
 		System.out.print("\r\n");
 
@@ -43,3 +43,20 @@ public class Assignment8 {
 	}
 
 }
+/* Screen Dump
+
+
+Enter a two digit number: 57
+
+The tens-place digit is: 5
+The ones-place digit is: 7
+
+
+Enter a three digit number: 385
+
+The hundreds-place digit is: 3
+The tens-place digit is: 8
+The ones-place digit is: 5
+
+
+ */
