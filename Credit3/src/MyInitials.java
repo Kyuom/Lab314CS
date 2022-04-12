@@ -13,7 +13,7 @@ Course: Computer Science 10
 public class MyInitials {
 
 	public static void main(String[] args) {
-		System.out.println("*      *     *      *\r\n"
+		System.out.println("*      *     *      *\r\n" //printing out initials written in *
 				+ "*     *      *      *\r\n"
 				+ "*    *       *      *\r\n"
 				+ "*   *        *      *\r\n"

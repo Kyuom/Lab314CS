@@ -18,19 +18,15 @@ public class Assignment7 {
 		Scanner myObj = new Scanner(System.in);
 
 		System.out.print("Enter the change in cents: ");
-		int cents = myObj.nextInt();
+		int cents = myObj.nextInt(); //Recording user cents input
 		System.out.println("\r\n");
 
-		int quarters = cents / 25;	
-		int dimes = (cents - quarters * 25) / 10;
-		int nickels = (cents - quarters * 25 - dimes * 10) / 5;
-		int pennies = (cents - quarters * 25 - dimes * 10 - nickels * 5) / 1;
+		int quarters = cents / 25; //The quarter amount calculation
+		int dimes = (cents - quarters * 25) / 10; //The dime amount calculation
+		int nickels = (cents - quarters * 25 - dimes * 10) / 5; //The nickel amount calculation
+		int pennies = (cents - quarters * 25 - dimes * 10 - nickels * 5) / 1; //The penny amount calculation
 				
-		System.out.println("The minimum number of coins is: ");
-		System.out.println("Quarters: " + quarters);
-		System.out.println("Dimes: " + dimes);
-		System.out.println("Nickels: " + nickels);
-		System.out.println("Pennies: " + pennies);
+		System.out.println("The minimum number of coins is: " + "\r\n" + "Quarters: " + quarters + "\r\n" + "Dimes: " + dimes + "\r\n" + "Nickels: " + nickels + "\r\n" + "Pennies: " + pennies); //The amount of coins according to user input
 	}
 
 }

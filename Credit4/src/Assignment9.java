@@ -17,11 +17,11 @@ public class Assignment9 {
 
 		Scanner myObj = new Scanner (System.in);
 		
-		System.out.print("Enter an integer: ");//prompting for an integer
-		int integer1 = myObj.nextInt(); //recording first integer
+		System.out.print("Enter an integer: "); //prompting for an integer
+		int integer1 = myObj.nextInt(); //recoding user first integer input
 		
-		System.out.print("Enter a second integer: ");
-		int integer2 = myObj.nextInt();
+		System.out.print("Enter a second integer: "); //prompting for a second integer
+		int integer2 = myObj.nextInt(); //recording user second integer input
 		System.out.print("\r\n");
 		
 		int answer1 = integer1 / integer2;

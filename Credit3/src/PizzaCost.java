@@ -19,25 +19,14 @@ public class PizzaCost {
 		    Scanner myObj = new Scanner(System.in);
 
 		    System.out.print("Enter the diameter of the pizza in inches: ");
-
-		    // User pizza diameter input
-		    int inches = myObj.nextInt();
+		    int inches = myObj.nextInt(); // Recording user pizza diameter input
 		    System.out.println("\r\n");
-			
-			// The labor cost of the pizza
-			float labor = 0.75f;
-			
-			// The rent cost of the pizza
-			float rent = 1.00f;
-			
-			// The material cost of the pizza
-			float materials = 0.05f * inches * inches;
-			
-			//The total cost of the pizza
-			float cost = labor + rent + materials;
-			
-		    // Output input by user
-		    System.out.println("The cost of the pizza is: $" + cost);
+		    
+			float labor = 0.75f; // The labor cost of the pizza
+			float rent = 1.00f; // The rent cost of the pizza
+			float materials = 0.05f * inches * inches; // The material cost calculation of the pizza
+			float cost = labor + rent + materials; //The total cost calculation of the pizza
+		    System.out.println("The cost of the pizza is: $" + cost); // Output input by user
 		  }
 		}
 /* Screen Dump

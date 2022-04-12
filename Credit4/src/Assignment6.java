@@ -18,30 +18,24 @@ public class Assignment6 {
 		Scanner myObj = new Scanner(System.in);
 		
 	    System.out.print("What is your first name? ");
-	    String firstname = myObj.nextLine();
+	    String firstname = myObj.nextLine(); //Recoding user first name input
 	    
 	    System.out.print("What is your last name? ");
-	    String lastname = myObj.nextLine();
+	    String lastname = myObj.nextLine(); //Recording user last name input
 	    
 	    System.out.print("What grade are you in? ");
-	    String grade = myObj.nextLine();
+	    String grade = myObj.nextLine(); //Recording user grade input
 	    
 	    System.out.print("What school do you attend? ");
-	    String school = myObj.nextLine();
+	    String school = myObj.nextLine(); //Recording user school input
 	    
 	    System.out.print("What is your favourite hobby? ");
-	    String hobby = myObj.nextLine();
+	    String hobby = myObj.nextLine(); //Recording user hobby input
 	    System.out.println("\r\n");
 	    
-	    String fullname = firstname + " " + lastname;
+	    String fullname = firstname + " " + lastname; //Adding first and last name together for the full name
 	    
-	    		System.out.println("Hello, your name is "+ fullname 
-	    				+", "
-	    				+ "you are currently in grade " + grade
-	    				+ " at " + school 
-	    				+ ". "
-	    				+ "Your favourite hobby is " + hobby
-	    				+ ".");
+	    		System.out.println("Hello, your name is "+ fullname  + ", " + "you are currently in grade " + grade + " at " + school + ". " + "Your favourite hobby is " + hobby + "."); //Printing dialogue with user input
 	}
 
 }
