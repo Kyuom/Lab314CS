@@ -17,8 +17,8 @@ public class Assignment9 {
 
 		Scanner myObj = new Scanner (System.in);
 		
-		System.out.print("Enter an integer: ");
-		int integer1 = myObj.nextInt();
+		System.out.print("Enter an integer: ");//prompting for an integer
+		int integer1 = myObj.nextInt(); //recording first integer
 		
 		System.out.print("Enter a second integer: ");
 		int integer2 = myObj.nextInt();
