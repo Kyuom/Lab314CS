@@ -18,11 +18,9 @@ public class EvenOrOdd {
 		Scanner myObj = new Scanner (System.in);
 		
 		System.out.print("Enter an integer: ");
-		int integer = myObj.nextInt();
+		int integer = myObj.nextInt(); //Recording user integer input
 		
-		System.out.print("The integer "
-				+integer
-				+" is even");
+		System.out.print("The integer " + integer + " is even");
 
 	}
 
