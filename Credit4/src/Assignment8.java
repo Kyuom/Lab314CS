@@ -18,7 +18,7 @@ public class Assignment8 {
 		Scanner myObj = new Scanner (System.in);
 		
 		System.out.print("Enter a two digit number: ");
-		int digit2 = myObj.nextInt(); //Recording user two digit number
+		int digit2 = myObj.nextInt(); //Recording user two digit number input
 		System.out.print("\r\n");
 
 		int tensplace2 = digit2 / 10; //tens place calculation
@@ -27,7 +27,7 @@ public class Assignment8 {
 		System.out.println("The tens-place digit is: " + tensplace2 + "\r\n" + "The ones-place digit is: " + onesplace2 + "\r\n"); //Printing dialogue with user input
 		
 		System.out.print("Enter a three digit number: ");
-		int digit3 = myObj.nextInt(); //Recording user three digit number
+		int digit3 = myObj.nextInt(); //Recording user three digit number input
 		System.out.print("\r\n");
 		
 		int hundredsplace3 = digit3 / 100; //hundreds place calculation

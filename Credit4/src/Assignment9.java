@@ -24,19 +24,15 @@ public class Assignment9 {
 		int integer2 = myObj.nextInt(); //recording user second integer input
 		System.out.print("\r\n");
 		
-		int answer1 = integer1 / integer2;
-		int answer2 = integer1 % integer2;
+		int answer1 = integer1 / integer2; //integer 1 divided by integer 2 calculation
+		int answer2 = integer1 % integer2; //integer 1 modulus by integer 2 calculation
 
-		System.out.print(integer1 + " / " + integer2 + " = " + answer1 + "\r\n");
-
-		System.out.print(integer1 + " % " + integer2 + " = " + answer2 + "\r\n\r\n");
+		System.out.print(integer1 + " / " + integer2 + " = " + answer1 + "\r\n" + integer1 + " % " + integer2 + " = " + answer2 + "\r\n\r\n");
 		
 		int answer3 = integer2 / integer1;
 		int answer4 = integer2 % integer1;
 		
-		System.out.print(integer2 + " / " + integer1 + " = " + answer3 + "\r\n");
-		
-		System.out.print(integer2 + " % " + integer1 + " = " + answer4);
+		System.out.print(integer2 + " / " + integer1 + " = " + answer3 + "\r\n" + integer2 + " % " + integer1 + " = " + answer4);
 	
 	}
 
