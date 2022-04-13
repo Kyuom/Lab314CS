@@ -27,6 +27,7 @@ public class Assignment7 {
 		int pennies = (cents - quarters * 25 - dimes * 10 - nickels * 5) / 1; //The penny amount calculation
 				
 		System.out.println("The minimum number of coins is: " + "\r\n" + "Quarters: " + quarters + "\r\n" + "Dimes: " + dimes + "\r\n" + "Nickels: " + nickels + "\r\n" + "Pennies: " + pennies); //The amount of coins according to user input
+	
 	}
 
 }

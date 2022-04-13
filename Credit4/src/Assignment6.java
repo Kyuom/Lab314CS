@@ -36,6 +36,7 @@ public class Assignment6 {
 	    String fullname = firstname + " " + lastname; //Adding first and last name together for the full name
 	    
 	    		System.out.println("Hello, your name is "+ fullname  + ", " + "you are currently in grade " + grade + " at " + school + ". " + "Your favourite hobby is " + hobby + "."); //Printing dialogue with user input
+	
 	}
 
 }

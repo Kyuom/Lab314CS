@@ -17,9 +17,7 @@ int answer1 = 79 + 3 * (4 + 82 - 68) - 7 + 19; //Calculation for the first equat
 int answer2 = (179 + 21 + 10) / 7 + 181; //Calculation for the second equation
 int answer3 = 10389 * 56 * 11 + 2246; //Calculation for the third equation
 
-System.out.println("79 + 3 * (4 + 82 - 68) - 7 + 19 = " + answer1); //Printing the equations with the answers
-System.out.println("(179 + 21 + 10) / 7 + 181 = " + answer2);
-System.out.println("10389 * 56 * 11 + 2246 = " + answer3);
+System.out.println("79 + 3 * (4 + 82 - 68) - 7 + 19 = " + answer1 + "\r\n" + "(179 + 21 + 10) / 7 + 181 = " + answer2 + "\r\n"+ "10389 * 56 * 11 + 2246 = " + answer3); //Printing the equations with the answers
 
 	}
 

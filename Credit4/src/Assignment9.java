@@ -37,6 +37,7 @@ public class Assignment9 {
 		System.out.print(integer2 + " / " + integer1 + " = " + answer3 + "\r\n");
 		
 		System.out.print(integer2 + " % " + integer1 + " = " + answer4);
+	
 	}
 
 }
