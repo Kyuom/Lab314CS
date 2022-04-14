@@ -20,7 +20,25 @@ public class EvenOrOdd {
 		System.out.print("Enter an integer: ");
 		int integer = myObj.nextInt(); //Recording user integer input
 		
-		System.out.print("The integer " + integer + " is even");
+		int hundredsplace = integer / 100; //hundreds place calculation
+		int tensplace = (integer - (hundredsplace * 100)) / 10; //tens place calculation
+		int onesplace = integer - (hundredsplace * 100) - (tensplace * 10); //ones place calculation
+		
+		if (onesplace == 2) {
+		      System.out.println("The integer " + integer + " is even");
+			} else if (onesplace == 4) {
+	        System.out.println("The integer " + integer + " is even");
+			} else if (onesplace == 6) {
+		        System.out.println("The integer " + integer + " is even");
+			} else if (onesplace == 6) {
+		        System.out.println("The integer " + integer + " is even");
+			} else if (onesplace == 8) {
+		        System.out.println("The integer " + integer + " is even");
+			} else if (onesplace == 0) {
+		        System.out.println("The integer " + integer + " is even");
+		    } else {
+		      System.out.println("The integer " + integer + " is odd");
+		    }
 
 	}
 
