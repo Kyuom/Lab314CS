@@ -20,10 +20,12 @@ public class EvenOrOdd {
 		System.out.print("Enter an integer: ");
 		int integer = myObj.nextInt(); //Recording user integer input
 		
-		if (integer % 2 == 0) {
-		      System.out.println("\r\n" + "The integer " + integer + " is even.");
-		    } else {
-		      System.out.println("\r\n" + "The integer " + integer + " is odd.");
+		if (integer % 2 == 0) //integer modulus returns the division remainder of 2
+			{
+		      System.out.println("\r\n" + "The integer " + integer + " is even."); //If integer has a remainder of 2, it is printed out as even
+		    } else 
+		    {
+		      System.out.println("\r\n" + "The integer " + integer + " is odd."); //If integer doesb't have a remainder of 2, it is printed out as odd
 		    }
 
 	}
