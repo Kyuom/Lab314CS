@@ -21,11 +21,28 @@ public class EvenOrOdd {
 		int integer = myObj.nextInt(); //Recording user integer input
 		
 		if (integer % 2 == 0) {
-		      System.out.println("The integer " + integer + " is even");
+		      System.out.println("\r\n" + "The integer " + integer + " is even.");
 		    } else {
-		      System.out.println("The integer " + integer + " is odd");
+		      System.out.println("\r\n" + "The integer " + integer + " is odd.");
 		    }
 
 	}
 
 }
+/* Screen Dump
+
+
+Enter an integer: 28
+
+The integer 28 is even.
+
+Enter an integer: 2049
+
+The integer 2049 is odd.
+
+Enter an integer: -236
+
+The integer -236 is even.
+
+
+ */
