@@ -19,8 +19,8 @@ Scanner myObj = new Scanner (System.in);
 		System.out.print("Enter a three digit integer: ");
 		int integer = myObj.nextInt(); //Recording user integer input
 		
-integer = integer % 10;
-integer = integer / 10;
+int integer1 = integer / 10;
+int integer2 = integer % 10;
 	}
 
 }

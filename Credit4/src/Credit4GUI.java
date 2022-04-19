@@ -9,6 +9,7 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class Credit4GUI {
 
@@ -84,6 +85,8 @@ public class Credit4GUI {
 		panel.add(a);
 		
 		JLabel dis = new JLabel("");
+		dis.setForeground(Color.BLACK);
+		dis.setBackground(Color.WHITE);
 		dis.setBounds(23, 247, 610, 90);
 		panel.add(dis);
 		
@@ -95,13 +98,22 @@ public class Credit4GUI {
 				String LN = ln.getText();
 				String A = a.getText();
 			
-				dis.setText("First name: " + FN + " Last name: " + LN + " Age: " + A);
+				dis.setText("First name: " + FN + " Last name: " + LN 
+						+ " and your age is: " + A);
 			}
 		});
 		S.setBounds(282, 14, 154, 63);
 		panel.add(S);
 		
 		JButton C = new JButton("Clear");
+		C.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				fn.setText(" ");
+				ln.setText(" ");	
+				a.setText(" ");
+			}
+		});
 		C.setBounds(282, 108, 154, 63);
 		panel.add(C);
 		
