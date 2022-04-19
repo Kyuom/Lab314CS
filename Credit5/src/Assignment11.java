@@ -19,8 +19,31 @@ Scanner myObj = new Scanner (System.in);
 		System.out.print("Enter a three digit integer: ");
 		int integer = myObj.nextInt(); //Recording user integer input
 		
-int integer1 = integer / 10;
-int integer2 = integer % 10;
-	}
+int firstdig = integer / 10;
+int seconddig = integer % 10;
 
+System.out.print("First digit: " + firstdig + " Second digit: " + seconddig);
+
+int max = 0;
+int min = 0;
+	
+if(firstdig > seconddig); //85
+{
+max = firstdig;
+min = seconddig;
+
+System.out.print("Maximum: " + max + " Minimum: " + min);
+
+}
+else //58
+{
+max = seconddig;
+min = firstdig;
+
+System.out.print("Maximum: " + max + " Minimum: " + min);
+
+}
+
+}
+	
 }
