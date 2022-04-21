@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
 public class ExampleGUI {
 
 	private JFrame frame;
-	private JTextField tdf;
+	private JTextField otd;
 
 	/**
 	 * Launch the application.
@@ -54,38 +54,52 @@ public class ExampleGUI {
 		td.setBounds(23, 58, 114, 14);
 		panel.add(td);
 		
-		tdf = new JTextField();
-		tdf.setBounds(23, 95, 86, 20);
-		panel.add(tdf);
-		tdf.setColumns(10);
+		otd = new JTextField();
+		otd.setBounds(23, 95, 86, 20);
+		panel.add(otd);
+		otd.setColumns(10);
 		
 		JLabel dis = new JLabel("");
-		dis.setBounds(46, 165, 326, 47);
+		dis.setBounds(23, 165, 361, 47);
 		panel.add(dis);
 		
-		JButton p = new JButton("Process");
-		p.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		p.setBounds(295, 24, 89, 48);
-		panel.add(p);
-		
-		JButton E = new JButton("Enter");
-		E.addActionListener(new ActionListener() {
+		JButton c = new JButton("Clear");
+		c.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
-				String td = tdf.getText();
-				int tdi = Integer.parseInt(td);
-				
-				int d1 = tdi / 10;
-				
-				//int sum
-				
-				dis.setText("" + td);
+				otd.setText(" ");
 			}
 		});
-		E.setBounds(295, 95, 89, 48);
+		c.setBounds(295, 106, 89, 48);
+		panel.add(c);
+		
+		JButton E = new JButton("Enter");
+		E.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent e) 
+			{
+				String td = otd.getText(); //record the two digits
+				int otd = Integer.parseInt(td); //get the integer part
+				int d1 = otd / 10; //record the first digit
+				int d2 = otd % 10; //record the second digit
+				
+				int sum = d1 + d2; //record the sum
+				
+				int prod = d1*d2; //record the product
+				
+				int check = sum + prod; //record the sum and the product
+				
+				if(check == otd)
+				{
+					dis.setText(otd + " is a special two digit number"); //display original two digit number with text
+				}
+				else
+				{
+					dis.setText(otd + " is not a special two digit number");
+				}
+			}
+		});
+		E.setBounds(295, 24, 89, 48);
 		panel.add(E);
 	}
 }
