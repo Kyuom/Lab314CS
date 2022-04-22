@@ -59,34 +59,54 @@ int min = 0;
 		  min = seconddig;
 	  }
 	  
-	  int sum = max + min;
-	  int prod = max * min;
+	  int sum = firstdig + seconddig + thirddig;
+	  int prod = firstdig * seconddig * thirddig;
 	  int avg = (firstdig + seconddig + thirddig) / 3;
 	  
-System.out.println("The largest of the three digits is: " + "\r\n" + max + " The smallest of the three digits is: " + min + " The sum of the three digits is" + sum 
-		+ " The product of the three digits is" + prod + " The average of the three digits is" + avg);
+System.out.println("The largest of the three digits is: " + max + "\r\n" + "The smallest of the three digits is: " + min + "\r\n" + "The sum of the three digits is: "
+		+ sum + "\r\n" + "The product of the three digits is: " + prod + "\r\n" + "The average of the three digits is: " + avg);
 	}
 
 }
 /*
 Enter a three digit integer: 579
 First digit: 5 Second digit: 7 Third digit: 9
-Maximum: 9 Minimum: 5
+The largest of the three digits is: 9
+The smallest of the three digits is: 5
+The sum of the three digits is: 21
+The product of the three digits is: 315
+The average of the three digits is: 7
 
 Enter a three digit integer: 931
 First digit: 9 Second digit: 3 Third digit: 1
-Maximum: 9 Minimum: 1
+The largest of the three digits is: 9
+The smallest of the three digits is: 1
+The sum of the three digits is: 13
+The product of the three digits is: 27
+The average of the three digits is: 4
 
 Enter a three digit integer: 486
 First digit: 4 Second digit: 8 Third digit: 6
-Maximum: 8 Minimum: 4
+The largest of the three digits is: 8
+The smallest of the three digits is: 4
+The sum of the three digits is: 18
+The product of the three digits is: 192
+The average of the three digits is: 6
 
 Enter a three digit integer: 452
 First digit: 4 Second digit: 5 Third digit: 2
-Maximum: 5 Minimum: 2
+The largest of the three digits is: 5
+The smallest of the three digits is: 2
+The sum of the three digits is: 11
+The product of the three digits is: 40
+The average of the three digits is: 3
 
 Enter a three digit integer: 536
 First digit: 5 Second digit: 3 Third digit: 6
-Maximum: 6 Minimum: 3
+The largest of the three digits is: 6
+The smallest of the three digits is: 3
+The sum of the three digits is: 14
+The product of the three digits is: 90
+The average of the three digits is: 4
 
 */ 
