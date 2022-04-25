@@ -10,13 +10,14 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class Credit4GUI {
 
 	private JFrame frame;
 	private JTextField ln;
 	private JTextField fn;
-	private JTextField a;
 
 	/**
 	 * Launch the application.
@@ -51,7 +52,7 @@ public class Credit4GUI {
 		frame.getContentPane().setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(43, 28, 655, 361);
+		panel.setBounds(10, 11, 688, 378);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
@@ -74,48 +75,57 @@ public class Credit4GUI {
 		panel.add(ln);
 		ln.setColumns(10);
 		
-		JLabel A = new JLabel("Age");
-		A.setBounds(23, 148, 75, 14);
-		A.setVerticalAlignment(SwingConstants.TOP);
-		panel.add(A);
-		
-		a = new JTextField();
-		a.setBounds(108, 148, 132, 20);
-		a.setColumns(10);
-		panel.add(a);
-		
 		JLabel dis = new JLabel("");
-		dis.setForeground(Color.BLACK);
-		dis.setBackground(Color.WHITE);
-		dis.setBounds(23, 247, 610, 90);
+		dis.setBounds(23, 222, 606, 117);
 		panel.add(dis);
 		
+		JLabel GD =new JLabel("Grade");
+		GD.setBounds(23, 148, 75, 14);
+		GD.setVerticalAlignment(SwingConstants.TOP);
+		panel.add(GD);
+		
+		JComboBox gd = new JComboBox();
+		gd.setBounds(108, 144, 132, 22);
+		gd.setModel(new DefaultComboBoxModel(new String[] {"10", "11", "12"}));
+		panel.add(gd);
+		
 		JButton S = new JButton("Submit");
+		S.setBounds(282, 14, 154, 63);
 		S.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
 				String FN = fn.getText();
 				String LN = ln.getText();
-				String A = a.getText();
-			
+				int grade;
+				
+				if(gd.getSelectedItem().equals("10"))
+				{
+					grade = 10;
+				}
+				else if(gd.getSelectedItem().equals("11"))
+				{
+					grade = 11;
+				}
+				else 
+				{
+					grade = 12;
+				}
+				
 				dis.setText("First name: " + FN + " Last name: " + LN 
-						+ " and your age is: " + A);
+						+ " and your grade is: " + grade);
 			}
 		});
-		S.setBounds(282, 14, 154, 63);
 		panel.add(S);
 		
 		JButton C = new JButton("Clear");
+		C.setBounds(282, 108, 154, 63);
 		C.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
 				fn.setText(" ");
 				ln.setText(" ");	
-				a.setText(" ");
 			}
 		});
-		C.setBounds(282, 108, 154, 63);
 		panel.add(C);
-		
 	}
 }
