@@ -15,6 +15,7 @@ public class Assignment12 {
 
 	public static void main(String[] args) {
 		Scanner myObj = new Scanner (System.in);
+		
 		System.out.print("Enter a grade percentage: "); //Prompt user to enter grade percentage
 		int percentage = myObj.nextInt(); //User input
 
