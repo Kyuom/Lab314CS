@@ -19,52 +19,52 @@ Scanner myObj = new Scanner (System.in);
 		System.out.print("Enter a three digit integer: ");
 		int integer = myObj.nextInt(); //Recording user integer input
 		
-int firstdig = integer / 100;
-int seconddig = (integer % 100) / 10;
-int thirddig = (integer % 100) % 10;
+int firstdig = integer / 100; //First digit
+int seconddig = (integer % 100) / 10; //Second digit
+int thirddig = (integer % 100) % 10; //Third digit
 
-System.out.println("First digit: " + firstdig + " Second digit: " + seconddig + " Third digit: " + thirddig);
+System.out.println("First digit: " + firstdig + " Second digit: " + seconddig + " Third digit: " + thirddig); //Display text with user input
 
 int max = 0;
 int min = 0;
 
-	  if ((seconddig > firstdig) && (thirddig > seconddig) && (thirddig > firstdig)) // the third digit is the greatest and the first digit is the smallest
+	  if ((seconddig > firstdig) && (thirddig > seconddig) && (thirddig > firstdig)) //The third digit is the greatest and the first digit is the smallest
 	  {
 		  max = thirddig;
 		  min = firstdig;
 	  }
-	  else if ((seconddig < firstdig) && (thirddig > seconddig) && (thirddig > firstdig)) // the third digit is the greatest and the second digit is the smallest
+	  else if ((seconddig < firstdig) && (thirddig > seconddig) && (thirddig > firstdig)) //The third digit is the greatest and the second digit is the smallest
 	  {
 		  max = thirddig;
 		  min = seconddig;
 	  }
-	  else if ((seconddig > firstdig) && (seconddig > thirddig) && (firstdig < thirddig)) // the second digit is the greatest and the first digit is the smallest
+	  else if ((seconddig > firstdig) && (seconddig > thirddig) && (firstdig < thirddig)) //The second digit is the greatest and the first digit is the smallest
 	  {
 	      max = seconddig;
 	      min = firstdig;
 	  }
-	  else if ((seconddig > firstdig) && (seconddig > thirddig) && (firstdig > thirddig)) // the second digit is the greatest and the third digit is the smallest
+	  else if ((seconddig > firstdig) && (seconddig > thirddig) && (firstdig > thirddig)) //The second digit is the greatest and the third digit is the smallest
 	  {
 		  max = seconddig;
 		  min = thirddig;
 	  }
-	  else if ((firstdig > seconddig) && (firstdig > thirddig) && (seconddig > thirddig)) // the first digit is the greatest and the third digit is the smallest
+	  else if ((firstdig > seconddig) && (firstdig > thirddig) && (seconddig > thirddig)) //The first digit is the greatest and the third digit is the smallest
 	  {
 		  max = firstdig;
 		  min = thirddig;
 	  }
-	  else // the first digit is the greatest and the second digit is the smallest
+	  else //The first digit is the greatest and the second digit is the smallest
 	  {
 		  max = firstdig;
 		  min = seconddig;
 	  }
 	  
-	  int sum = firstdig + seconddig + thirddig;
-	  int prod = firstdig * seconddig * thirddig;
-	  int avg = (firstdig + seconddig + thirddig) / 3;
+	  int sum = firstdig + seconddig + thirddig; //Calculating the total sum of the digits
+	  int prod = firstdig * seconddig * thirddig; //Calculating the total product of the digits
+	  int avg = (firstdig + seconddig + thirddig) / 3; //Calculating the total average of the digits
 	  
 System.out.println("The largest of the three digits is: " + max + "\r\n" + "The smallest of the three digits is: " + min + "\r\n" + "The sum of the three digits is: "
-		+ sum + "\r\n" + "The product of the three digits is: " + prod + "\r\n" + "The average of the three digits is: " + avg);
+		+ sum + "\r\n" + "The product of the three digits is: " + prod + "\r\n" + "The average of the three digits is: " + avg); //Displaying text with user input and calculations
 	}
 
 }
