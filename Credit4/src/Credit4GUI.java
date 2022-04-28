@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 import java.awt.Color;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
 
 public class Credit4GUI {
 
@@ -19,6 +20,8 @@ public class Credit4GUI {
 	private JTextField ln;
 	private JTextField fn;
 
+	ImageIcon img1 = new ImageIcon("C:/Users/1005244507/git/Lab314CS/Credit4/src/imaginarybeast1-600x600.png");
+	
 	/**
 	 * Launch the application.
 	 */
@@ -76,7 +79,7 @@ public class Credit4GUI {
 		ln.setColumns(10);
 		
 		JLabel dis = new JLabel("");
-		dis.setBounds(23, 222, 606, 117);
+		dis.setBounds(23, 222, 643, 117);
 		panel.add(dis);
 		
 		JLabel GD =new JLabel("Grade");
@@ -88,6 +91,10 @@ public class Credit4GUI {
 		gd.setBounds(108, 144, 132, 22);
 		gd.setModel(new DefaultComboBoxModel(new String[] {"10", "11", "12"}));
 		panel.add(gd);
+		
+		JLabel pic = new JLabel("");
+		pic.setBounds(475, 14, 159, 157);
+		panel.add(pic);
 		
 		JButton S = new JButton("Submit");
 		S.setBounds(282, 14, 154, 63);
@@ -101,6 +108,7 @@ public class Credit4GUI {
 				if(gd.getSelectedItem().equals("10"))
 				{
 					grade = 10;
+					pic.setIcon(img1);
 				}
 				else if(gd.getSelectedItem().equals("11"))
 				{
@@ -127,5 +135,7 @@ public class Credit4GUI {
 			}
 		});
 		panel.add(C);
+		
+
 	}
 }

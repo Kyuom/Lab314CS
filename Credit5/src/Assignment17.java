@@ -18,8 +18,9 @@ public class Assignment17 {
 		System.out.print("Enter your grade average point (GPA) or -1 to quit the program: "); //Prompt user to enter their GPA
 		int ui = myObj.nextInt(); //User input
 
-	
-		
+	while(ui < -1)
+	{
+		System.out.print("")
 	}
 
 }
