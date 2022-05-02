@@ -29,19 +29,19 @@ public class Assignment13 {
 		{
 			System.out.print("Price per copy is: $0.30" + "\r\n" + "Total cost is: " + cost1); //Print cost per sheet and total cost
 		}
-		else if(copies >= 100 && copies <=499) //Calculations for copies between 100 and 499
+		else if(copies >= 100 && copies <= 499) //Calculations for copies between 100 and 499
 		{
 			System.out.print("Price per copy is: $0.28" + "\r\n" + "Total cost is: " + cost2); //Print cost per sheet and total cost
 		}
-		else if(copies >= 500 && copies <=749) //Calculations for copies between 500 and 749
+		else if(copies >= 500 && copies <= 749) //Calculations for copies between 500 and 749
 		{
 			System.out.print("Price per copy is: $0.27" + "\r\n" + "Total cost is: " + cost3); //Print cost per sheet and total cost
 		}
-		else if(copies >= 750 && copies <=1000) //Calculations for copies between 750 and 1000
+		else if(copies >= 750 && copies <= 1000) //Calculations for copies between 750 and 1000
 		{
 			System.out.print("Price per copy is: $0.26" + "\r\n" + "Total cost is: " + cost4); //Print cost per sheet and total cost
 		}
-		else if(copies >1000) //Calculations for copies above 1000
+		else if(copies > 1000) //Calculations for copies above 1000
 		{
 			System.out.print("Price per copy is: $0.25" + "\r\n" + "Total cost is: " + cost5); //Print cost per sheet and total cost
 		}
