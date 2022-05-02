@@ -26,25 +26,30 @@ public class Assignment17 {
 	
 	if (ui <= -1)
 	{
-		System.out.print("Program Quit");
+		System.out.println("Program Quit");
 	}
 	else if (ui >= 3.8)
 	{
-		System.out.print("summa cum laude" + "\r\n" + "Would you like to enter another GPA?");
+		System.out.println("summa cum laude");
 	}
 	else if (ui >= 3.65 && ui < 3.8)
 	{
-		System.out.print("magna cum laude" + "\r\n" + "Would you like to enter another GPA?");
+		System.out.println("magna cum laude");
 	}
 	else if (ui >= 3.5 && ui < 3.65)
 	{
-		System.out.print("cum laude" + "\r\n" + "Would you like to enter another GPA?");
+		System.out.println("cum laude");
 	}
 	else
 	{
-		System.out.print("Sorry, at this you did not qualify for an honors distinction.");
+		System.out.println("Sorry, at this you did not qualify for an honors distinction.");
 	}
 	
+	System.out.println("Would you like to enter another GPA?");
+    String a = myObj.nextLine();
+	System.out.println(a);
+	
+
 	}
 	
 
