@@ -113,6 +113,9 @@ public class Credit4GUI {
 				else if(gd.getSelectedItem().equals("11"))
 				{
 					grade = 11;
+					Credit4GUIVersion2 V = new Credit4GUIVersion2();
+					V.setVisible(true);
+					
 				}
 				else 
 				{
