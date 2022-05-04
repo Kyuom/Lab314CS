@@ -44,4 +44,8 @@ public class Credit4GUIVersion2 {
 		panel.setLayout(null);
 	}
 
+	public void setVisible(boolean b) {
+		
+	}
+
 }
