@@ -13,12 +13,18 @@ Course: Computer Science 10
 */
 public class Assignment17 {
 
+	
+
+	
 	public static void main(String[] args) {
+		
 		Scanner myObj = new Scanner (System.in);
+		
+		String a;
 	 	do {
 		System.out.print("Enter your grade average point (GPA) or -1 to quit the program: " + "\r\n"); //Prompt user to enter their GPA
 		double ui = myObj.nextDouble(); //User input
-		{
+		
 		while (ui < -1) //If the user input is less than -1
 		{
 		    System.out.println("Please re-enter GPA from 0.0-4.0 or -1 to quit program: ");
@@ -52,16 +58,13 @@ public class Assignment17 {
 		}
 		
 	
-		System.out.println("Would you like to enter another GPA? (Y/N)"); //Prompt the user to enter another GPA
-		String a = myObj.nextLine(); //User answer input
+		System.out.println("\r\n" + "Would you like to enter another GPA? (Y/N)"); //Prompt the user to enter another GPA
+		a = myObj.nextLine(); //User answer input
 	
-		}while(!a.equals("Y") && !a.equals("y")); //If user input is not "Y" or "y"
-		
-	System.out.println("Thank you for using our program, have a great day!");
-		
-		}
-	}
+	 	}while(!(a.equals("Y")) && !(a.equals("y"))); //If user input is not "Y" or "y"
+	
+	 	
 }
 
-	
+}
 		
