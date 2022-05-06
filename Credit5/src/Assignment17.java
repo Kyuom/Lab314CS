@@ -56,7 +56,6 @@ public class Assignment17 {
 		{
 			System.out.println("Sorry, at this you did not qualify for an honors distinction.");
 		}
-		
 	
 		System.out.println("\r\n" + "Would you like to enter another GPA? (Y/N)"); //Prompt the user to enter another GPA
 		a = myObj.nextLine(); //User answer input
