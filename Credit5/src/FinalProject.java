@@ -67,7 +67,7 @@ public class FinalProject {
 		System.out.print("Your average is: " + A);
 		    
 		
-		if (A >= 80 && ui <= 100) //If average is 80-100
+		if (A >= 80 && A <= 100) //If average is 80-100
 		{
 			System.out.println("Honours Student" + "\r\n");
 		}
