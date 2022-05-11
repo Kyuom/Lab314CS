@@ -20,8 +20,8 @@ public class FinalProject {
 		String UN = myObj.nextLine();
 		
 		System.out.print("Create a password that is at least 5 characters long: ");
-		String P = myObj.nextLine();
-		while(P.length() < 5) 
+		String P = myObj.nextLine(); //Password variable
+		while(P.length() < 5) //Password length is less than 5
 		{
 			
 			System.out.print("Please re-enter a password that is at least 5 characters long: ");
@@ -70,8 +70,10 @@ public class FinalProject {
 		a = myObj.nextLine() + myObj.nextLine(); //User answer input
 		
 	 	}while (!a.equals("N") && !a.equals("n")); //If user input is not "N" or "n" loop
-	
+	 	
 	 	System.out.println("Thank you for using our program, have a great day!"); 
+	 	
+	 	
 	}
 
 }
