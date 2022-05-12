@@ -65,7 +65,15 @@ public class FinalProject {
 		{
 			System.out.println("Invalid grade" + "\r\n");
 		}
-	
+
+		if (A >= 90) //if average is 90 or above
+		{
+			System.out.println("You are elegible for computer science at the University of Calgary!" + "\r\n");
+		}
+		else
+		{
+			System.out.println("You are not eligible for computer science at the University of Calgary" + "\r\n");
+		}
 		System.out.println("Would you like to enter another grade? (Y/N)"); //Prompt the user to enter another grade
 		a = myObj.nextLine() + myObj.nextLine(); //User answer input
 		
